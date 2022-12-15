@@ -6,8 +6,7 @@ EXPOSE 8000
 WORKDIR /app
 
 # Prefer not to run as root.
-USER deno
 
 ADD . .
 
-CMD ["run", "-A", "main.ts"]
+CMD ["deno", "run", "-A", "main.ts"]
